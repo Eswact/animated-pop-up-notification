@@ -1,0 +1,284 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol,
+ul {
+list-style: none;
+}
+blockquote,
+q {
+quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* reset css */    
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(115deg, rgb(238, 104, 31), rgba(50, 25, 5, 0.37));
+    overflow: hidden;
+}
+
+.imdivi {
+    height: 60px;
+    width: 320px;
+    animation: show-bildirim 0.8s forwards ease-in-out;
+}
+
+#img1 {
+    width: 40%;
+    height: 40%;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1.5px solid #EE681F;
+    animation: rotate-logo 0.8s forwards ease-in-out;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.37);
+    z-index: 1;
+}
+
+@keyframes show-bildirim {
+    0% {
+        transform: translateX(-1200px) translateY(-40px);
+    }
+
+    75% {
+        transform: translateX(200px) translateY(-40px) scale(1.1);
+    }
+
+    100%{
+        transform: translateX(135px) translateY(-40px);
+    }
+}
+
+@keyframes rotate-logo {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.flx{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    padding-right: 150px;
+}
+
+#duyuru{
+    border: 1.5px solid #EE681F;
+    width: 400px;
+    height: 50px;
+    padding: 50px 0px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    transition: visibility 100ms ease-in-out;
+    animation: show-duyuru 0.8s forwards ease-in-out;
+    z-index: 1;
+}
+
+@keyframes show-duyuru {
+    0% {
+        transform: translateY(-1200px);
+    }
+
+    75% {
+        transform: translateY(100px) scale(1.1);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes out-duyuru {
+    100% {
+        transform: translateY(1200px);
+    }
+}
+
+#duyuru.invis{
+    animation: out-duyuru 0.8s forwards ease-in-out;
+}
+
+.imdivi.ucurt{
+    animation: ucur-bildirim 0.8s forwards ease-in-out;
+}
+
+#img1.dondurt{
+    animation: rotate-logo2 0.8s forwards ease-in-out;
+}
+
+@keyframes ucur-bildirim {
+    0% {
+        transform: translateX(150px) translateY(-40px);
+    }
+
+    100%{
+        transform: translateX(1750px) translateY(-40px);
+    }
+}
+
+@keyframes rotate-logo2 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fw{
+    color: rgb(238, 104, 31);
+    font-weight: 900;
+    margin-right: 5px;
+    text-shadow: 2px 1px rgba(238, 104, 31, 0.37);
+}
+
+.dp{
+    font-size: 22px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.37);
+}
+
+.dbut{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(115deg, rgb(238, 104, 31), rgba(50, 25, 5, 0.37));
+    padding: 6px 24px;
+    border: 1px solid rgb(238, 104, 31);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(138, 53, 11, 0.37);
+}
+
+.dbut:hover{
+    animation: but-dolas 0.5s forwards ease-in-out;
+}
+
+@keyframes but-dolas {
+    33%{
+        transform: translateX(30px);
+    }
+    66% {
+        transform: translateX(-30px);
+    }
+    99%{
+        transform: translateX(0);
+    }
+}
