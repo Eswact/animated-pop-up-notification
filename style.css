@@ -182,8 +182,8 @@ body{
 #duyuru{
     border: 1.5px solid #EE681F;
     width: 400px;
-    height: 50px;
-    padding: 50px 0px;
+    height: 60px;
+    padding: 40px 0 55px 0;
     border-radius: 15px;
     background-color: white;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.37);
@@ -224,6 +224,10 @@ body{
 
 #img1.dondurt{
     animation: rotate-logo2 0.8s forwards ease-in-out;
+}
+
+#all.dbitir{
+    visibility: hidden;
 }
 
 @keyframes ucur-bildirim {
@@ -281,4 +285,9 @@ body{
     99%{
         transform: translateX(0);
     }
+}
+
+#bdg{
+    padding: 4px;
+    font-size: 12px;
 }

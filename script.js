@@ -13,6 +13,11 @@ function doner() {
   dondur.classList.toggle("dondurt");
 }
 
+var bitir = document.getElementById("all");
+function allinvis(){
+  bitir.classList.toggle("dbitir");
+}
+
 function getdata(){
   const dm = document.getElementById("duymes");
   fetch("veri.json")
@@ -25,3 +30,10 @@ function getdata(){
   })
 }
 getdata();
+
+function check(){
+  if(document.getElementById("myCheck").checked == true){
+    allinvis();
+  }
+}
+check();
